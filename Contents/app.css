@@ -1,0 +1,120 @@
+/* app.css by Mike Roe (200166222) hosted at my server on Dreamhost */
+/* Rules for the three web pages: */
+
+body{
+    background-color: lightblue;
+    font-family: georgia;
+}
+
+a img{
+    width:75px;
+    height:25px;
+    margin-top:-10px;
+    align-self: left;
+}
+
+#Contact{
+    background-color: mediumpurple;
+   
+}
+
+#Projects{
+    background-color: coral;
+}
+
+fieldset{
+    border:none;
+    width:400px;
+    margin:40px 425px;
+}
+
+button{
+    border:none;
+    vertical-align: auto;
+    width: 150px;
+    
+}
+
+legend{
+    text-align: center;
+}
+
+#fname{
+    width: 400px;
+}
+
+#lname{
+    width: 400px;
+}
+
+#EmailAddress{
+    width: 400px;
+}
+
+#PhoneNumber {
+    width: 400px;
+}
+
+img{
+    
+    display: block;
+    height: 500px;
+    width: 600px;
+    padding: 5px;
+    margin:auto;
+    margin-left:335px;
+    margin-top:65px;
+}
+
+/* Textural Modifiers */
+
+p{
+    display: block;
+    text-align:center;
+    width:600px;
+    margin-left:335px;
+  
+}
+
+h1{
+   margin-top: 60px;
+   font-weight: normal;
+   font-size: 150%;
+   text-align: center;
+}
+
+h2{
+   margin-top: 75px;
+   font-weight: normal;
+   font-size: 125%;
+   text-align: center;
+}
+
+/* Navigation Bar settings */
+
+ul {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    border: 2px solid grey;
+    background-color: gold;
+}
+
+
+li {
+    float: right;
+    list-style-type: none;
+    width: auto;
+
+}
+
+
+
+a {
+    display: block;
+    padding: 8px;
+    background-color: gold;
+}
+
+
+

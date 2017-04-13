@@ -1,0 +1,24 @@
+{
+  "data": [
+    {
+      "name": "myBio",
+      "content": "My name is Mike Roe. I am a first year student just trying to get my name out there."
+    },
+    {
+      "name": "PhotoInfo",
+      "content": "My Graduating class from this past April. I am in the very back, second from the left with the long hair."
+    },
+    {
+      "name": "FirstDescription",
+      "content": "A website I built using Adobe Muse."
+    },
+    {
+        "name": "SecondDescription",
+        "content": "Two posters, one done solo and one done in a group utilizing the method of screen printing."
+    },
+    {
+        "name": "ThirdDescription",
+        "content": "Using Photoshop's reflect tool to manipulate a painting I did."
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "name": "client-side-scripting-assignment-4",
+  "description": "assignment 4 for client side scripting",
+  "main": "",
+  "keywords": [
+    "JavaScript"
+  ],
+  "authors": [
+    "Mike Roe"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "Scripts/lib",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "2.2.4",
+    "bootstrap": "^3.3.7",
+    "font-awesome": "^4.7.0"
+  }
+}

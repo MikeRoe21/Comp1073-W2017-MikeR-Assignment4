@@ -1,0 +1,71 @@
+<!-- Contact.html by Mike Roe (200166222) hosted at my server on Dreamhost -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Contact</title>
+    <!-- CSS stylesheets -->
+    <link rel="stylesheet" href="./Scripts/lib/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./Scripts/lib/bootstrap/dist/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="./Scripts/lib/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./Contents/app.css">
+</head>
+
+
+<body id="Contact">
+
+    <!-- Placing the other two pages in a list for better organization -->
+    <ul>
+        <li><a href="index.html"><i class="fa fa-home fa-fw" aria-hidden="true"></i>Home</a></li>
+        <li><a href="Projects.html"><i class="fa fa-files-o fa-fw" aria-hidden="true"></i>Projects by me</a></li>
+        <!-- When clicking the logo, for some reason the URL omits the /Assets which leads to a broken page instead of displaying the logo.jpg -->
+        <li>
+            <a href="Logo.jpg" class="img"><img src="./Assets/Logo.jpg"></a>
+        </li>
+    </ul>
+
+
+    <!-- Functioning Contact form which accepts user input -->
+
+    <div class="container" id="contactform">
+        <div class="row">
+            <div class="col-md-offset-3 col-md-6">
+                <h1 id="FormHead">Contact Me!</h1>
+
+                <form>
+                    <div class="form-group">
+                        <label for="Name">Name</label>
+                        <input type="text" class="form-control" id="Name" placeholder="Please enter your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="Email">Email</label>
+                        <input type="text" class="form-control" id="Email" placeholder="Please enter your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="Message">Message</label>
+                        <textarea class="form-control" rows="3" id="Message"  placeholder="Please leave a Message" required></textarea>
+                    </div>
+
+                    <!-- Functioning "submit" and "reset" buttons for the form -->
+
+                    <button type="submit" id="ButtonSubmit" class="btn btn-success">Send</button>
+                    <button type="reset" id="ButtonReset" class="btn btn-danger">Reset</button>
+                </form>
+
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <!-- JavaScript  -->
+    <script src="./Scripts/lib/jquery/dist/jquery.min.js"></script>
+    <script src="./Scripts/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="./Scripts/app.js"></script>
+</body>
+
+</html>
