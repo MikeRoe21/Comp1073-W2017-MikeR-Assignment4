@@ -31,9 +31,10 @@ function LoadPageContent() {
   }
 }
 
+
 function LoadHomePage() {
 
-
+  
             // using let as a variable to control text injection to the page
             let Introduction = document.getElementById("Introduction");
             let myBio = "My name is Mike Roe. I am a first year student just trying to get my name out there.";
@@ -47,18 +48,22 @@ function LoadHomePage() {
             console.log(PhotoInfo);
            };
 
-      let XHR = new XMLHttpRequest();
-      XHR.open("GET", "data.json", true);
-      XHR.send();
-      XHR.onreadystatechange = function () {
-        if ((this.readyState === 4) && (this.status === 200)) {
-          data = JSON.parse(this.responseText);
-        }
-        console.log("json data loaded");
-      };
+          
+           //Project 3 requirement
 
-      XHR.addEventListener("load", function () {
-           }, this);
+      // let XHR = new XMLHttpRequest();
+      // XHR.open("GET", "data.json", true);
+      // XHR.send();
+      // XHR.onreadystatechange = function () {
+      //   if ((this.readyState === 4) && (this.status === 200)) {
+      //     data = JSON.parse(this.responseText);
+      //   }
+      //   console.log("json data loaded");
+      // };
+
+      // XHR.addEventListener("load", function () {
+      //      }, this);
+       
        
     
 
