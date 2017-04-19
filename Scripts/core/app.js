@@ -40,7 +40,7 @@
         console.log("App Started!!");
         TextLabel = new objects.Label(" Click Kirby for My Projects", "18px", "Verdana", "#000000", canvasHalfWidth, canvasHalfHeight - 50, true);
         stage.addChild(TextLabel);
-        clickMeButton = new objects.Button("comp1073-a4-mikeroe.azurewebsites.net/Client-Side-Scripting-Assignment-4/Assets/Kirby.gif", true, 150, 40, canvasHalfWidth, canvasHalfHeight + 50);
+        clickMeButton = new objects.Button("../Client-Side-Scripting-Assignment-4/Assets/Kirby.gif", true, 150, 40, canvasHalfWidth, canvasHalfHeight + 50);
         stage.addChild(clickMeButton);
         clickMeButton.on("click", function (event) {
             // TextLabel.text = "Testing!";
