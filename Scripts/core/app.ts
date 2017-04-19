@@ -61,7 +61,6 @@ function Main():void {
     stage.addChild(clickMeButton);
 
     clickMeButton.on("click", function(event:createjs.MouseEvent){
-        // TextLabel.text = "Testing!";
         location.href="Projects.html";
     });
 

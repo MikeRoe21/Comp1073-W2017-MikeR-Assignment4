@@ -43,7 +43,6 @@
         clickMeButton = new objects.Button("./Assets/Kirby.gif", true, 150, 40, canvasHalfWidth, canvasHalfHeight + 50);
         stage.addChild(clickMeButton);
         clickMeButton.on("click", function (event) {
-            // TextLabel.text = "Testing!";
             location.href = "Projects.html";
         });
     }
