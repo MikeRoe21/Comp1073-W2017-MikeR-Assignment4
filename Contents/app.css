@@ -124,9 +124,9 @@ a {
 }
 
 #canvas {
-  background-color: white;
+  background-color: orange;
   margin: 0 auto;
-  border: 1px Solid black;
+  border: 2px Solid black;
 }
 
 

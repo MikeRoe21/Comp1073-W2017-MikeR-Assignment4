@@ -10,8 +10,24 @@ var __extends = (this && this.__extends) || (function () {
 })();
 var objects;
 (function (objects) {
+    /**
+     *
+     * @export
+     * @class Label
+     * @extends {createjs.Text}
+     */
     var Label = (function (_super) {
         __extends(Label, _super);
+        /**
+         *
+         * @param {string} textString
+         * @param {string} fontSize
+         * @param {string} fontType
+         * @param {string} fontColor
+         * @param {number} x
+         * @param {number} y
+         * @param {boolean} isCentered
+         */
         function Label(textString, fontSize, fontType, fontColor, x, y, isCentered) {
             var _this = _super.call(this, textString, fontSize + " " + fontType, fontColor) || this;
             _this.textString = textString;

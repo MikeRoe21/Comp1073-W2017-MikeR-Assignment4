@@ -1,7 +1,12 @@
 (function () {
     var canvas;
+    var canvasWidth;
+    var canvasHeight;
+    var canvasHalfWidth;
+    var canvasHalfHeight;
     var stage;
-    var Test;
+    var TextLabel;
+    var clickMeButton;
     /**
      *
      * @method Start
@@ -9,9 +14,14 @@
      */
     function Start() {
         canvas = document.getElementById("canvas");
+        canvasWidth = parseInt(canvas.getAttribute("width"));
+        canvasHeight = parseInt(canvas.getAttribute("height"));
+        canvasHalfWidth = canvasWidth * 0.5;
+        canvasHalfHeight = canvasHeight * 0.5;
         stage = new createjs.Stage(canvas);
         createjs.Ticker.framerate = 60;
         createjs.Ticker.on("tick", Update);
+        stage.enableMouseOver(20);
         Main();
     }
     /**
@@ -19,7 +29,7 @@
      * @returns void
      */
     function Update(event) {
-        Test.rotation += 2;
+        TextLabel.rotation += 1;
         stage.update();
     }
     /**
@@ -28,12 +38,14 @@
      */
     function Main() {
         console.log("App Started!!");
-        Test = new createjs.Text("My Projects", "24px Verdana", "#000000");
-        Test.regX = Test.getMeasuredWidth() * 0.5;
-        Test.regY = Test.getMeasuredHeight() * 0.5;
-        Test.x = 234;
-        Test.y = 30;
-        stage.addChild(Test);
+        TextLabel = new objects.Label(" Click Kirby for My Projects", "18px", "Verdana", "#000000", canvasHalfWidth, canvasHalfHeight - 50, true);
+        stage.addChild(TextLabel);
+        clickMeButton = new objects.Button("../Client-Side-Scripting-Assignment-4/Assets/Kirby.gif", true, 150, 40, canvasHalfWidth, canvasHalfHeight + 50);
+        stage.addChild(clickMeButton);
+        clickMeButton.on("click", function (event) {
+            // TextLabel.text = "Testing!";
+            location.href = "Projects.html";
+        });
     }
     window.onload = Start;
 })();
