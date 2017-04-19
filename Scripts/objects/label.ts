@@ -1,3 +1,4 @@
+// label.ts by Mike Roe (200166222) hosted at my server on Dreamhost 
 module objects {
     /**
      * 
